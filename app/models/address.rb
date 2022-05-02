@@ -1,4 +1,4 @@
 class Address < ApplicationRecord
   has_many :orders
-  #ここにaddressableとのアソシエーションを記載
+  belongs_to :addressable, polymorphic: true
 end
