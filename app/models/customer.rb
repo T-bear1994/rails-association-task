@@ -1,4 +1,4 @@
 class Customer < ApplicationRecord
   has_many :orders
-  #ここにaddressable_idに関する記述が必要
+  has_many :addresses, as: :addressable
 end
